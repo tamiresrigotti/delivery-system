@@ -1,4 +1,4 @@
-package credencial.domain;
+package com.deliverytech.deliverysistem.credencial.domain;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.FieldType;

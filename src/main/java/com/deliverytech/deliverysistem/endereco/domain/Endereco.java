@@ -1,4 +1,4 @@
-package cliente;
+package com.deliverytech.deliverysistem.endereco.domain;
 
 import jakarta.validation.constraints.NotBlank;
 

@@ -1,4 +1,4 @@
-package cliente;
+package com.deliverytech.deliverysistem.cliente.domain;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -7,6 +7,8 @@ import java.util.UUID;
 import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.deliverytech.deliverysistem.endereco.domain.Endereco;
 
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
