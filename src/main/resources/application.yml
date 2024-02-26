@@ -6,5 +6,5 @@ spring:
  data:
   mongodb:
    authentication-database: admin
-   uri: ${MONGO_DB_URI:mongodb+srv://tammyrigoti:3Yw1aKDsHZiATbk5@cluster0.bacfzeo.mongodb.net/Delivery?retryWrites=true&w=majority&appName=Cluster0}
+   uri: ${MONGO_DB_URI:mongodb+srv://tammyrigoti:aqs33jk5q1Il1WCa@cluster0.bacfzeo.mongodb.net/Delivery?retryWrites=true&w=majority&appName=Cluster0}
    auto-index-creation: true

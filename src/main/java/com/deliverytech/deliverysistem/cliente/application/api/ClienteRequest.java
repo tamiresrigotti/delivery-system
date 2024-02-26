@@ -3,14 +3,13 @@ package com.deliverytech.deliverysistem.cliente.application.api;
 import java.time.LocalDate;
 
 import org.hibernate.validator.constraints.br.CPF;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.mongodb.core.index.Indexed;
-
-import com.deliverytech.deliverysistem.endereco.domain.Endereco;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import lombok.Value;
 
+@Value
 public class ClienteRequest {
 	@NotBlank
 	private String nomeCompleto;
@@ -19,6 +18,4 @@ public class ClienteRequest {
 	private String cpf;
 	@NotNull
 	private LocalDate dataDeNascimento;
-	@NotBlank
-	private Endereco endereco;
 }

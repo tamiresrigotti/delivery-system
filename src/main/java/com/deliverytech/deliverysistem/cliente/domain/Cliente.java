@@ -31,8 +31,6 @@ public class Cliente {
 	private String cpf;
 	@NotNull
 	private LocalDate dataDeNascimento;
-	@NotBlank
-	private Endereco endereco;
 	
 	private LocalDateTime dataHoraDoCadastro;
 	private LocalDateTime dataHoradaUltimaAlteracao;
@@ -44,8 +42,6 @@ public class Cliente {
 		this.idCliente = idCliente;
 		this.nomeCompleto = nomeCompleto;
 		this.cpf = cpf;
-		this.dataDeNascimento = dataDeNascimento;
-		this.endereco = endereco;
 		this.dataHoraDoCadastro = dataHoraDoCadastro;
 		this.dataHoradaUltimaAlteracao = dataHoradaUltimaAlteracao;
 	}
