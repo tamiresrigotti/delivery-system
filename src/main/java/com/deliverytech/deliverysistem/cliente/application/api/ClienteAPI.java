@@ -1,4 +1,4 @@
-package com.deliverytech.deliverysistem.credencial.application.api;
+package com.deliverytech.deliverysistem.cliente.application.api;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;
