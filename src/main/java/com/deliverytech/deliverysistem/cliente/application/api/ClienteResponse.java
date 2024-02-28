@@ -1,11 +1,11 @@
 package com.deliverytech.deliverysistem.cliente.application.api;
-import org.hibernate.validator.constraints.UUID;
+import java.util.UUID;
 
 import lombok.Builder;
-import lombok.Value;
+import lombok.Getter;
 
-@Value
+@Getter
 @Builder
 public class ClienteResponse {
-	private UUID idCliente; 
+	private UUID idCliente;
 }

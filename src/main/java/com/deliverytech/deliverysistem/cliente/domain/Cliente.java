@@ -36,7 +36,7 @@ public class Cliente {
 	private LocalDateTime dataHoradaUltimaAlteracao;
 
 	public Cliente(ClienteRequest clienteRequest) {
-		
+		this.idCliente = UUID.randomUUID();
 		this.nomeCompleto = clienteRequest.getNomeCompleto();
 		this.cpf = clienteRequest.getCpf();
 		this.dataDeNascimento = clienteRequest.getDataDeNascimento();
