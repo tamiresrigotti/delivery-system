@@ -1,9 +1,12 @@
 package com.deliverytech.deliverysistem.cliente.credencial.infra;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Repository;
 
 import com.deliverytech.deliverysistem.cliente.application.repository.ClienteRepository;
+import com.deliverytech.deliverysistem.cliente.application.service.ClienteListResponse;
 import com.deliverytech.deliverysistem.cliente.domain.Cliente;
 import com.mongodb.MongoWriteException;
 
@@ -19,13 +22,21 @@ public class ClienteInfraRepository implements ClienteRepository {
 	@Override
 	public Cliente salva(Cliente cliente) {
 		log.info("[inicia] ClienteInfraRepository - salva");
-		try {
+				try {
 			clienteSpringDataJPARepository.save(cliente);
 		} catch (MongoWriteException e) {
 			throw APIException.build(HttpStatus.BAD_REQUEST, "O cliente associada a este CPF já foi cadastrado!", e);
 		}
 		log.info("[finaliza] ClienteInfraRepository - salva");
 		return cliente;
+	}
+
+	@Override
+	public List<Cliente> buscaTodosClientes() {
+		log.info("[inicia] ClienteApplicationService - buscaTodosClientes");
+		List<Cliente> todosClientes = clienteSpringDataJPARepository.findAll();
+		log.info("[finaliza] ClienteApplicationService - buscaTodosClientes");
+		return todosClientes;
 	}
 
 }
