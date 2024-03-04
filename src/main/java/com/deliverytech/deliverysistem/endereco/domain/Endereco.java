@@ -1,6 +1,6 @@
 package com.deliverytech.deliverysistem.endereco.domain;
 
-import jakarta.validation.constraints.NotBlank;
+import javax.validation.constraints.NotBlank;
 
 public class Endereco {
 	@NotBlank
