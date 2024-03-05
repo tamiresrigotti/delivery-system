@@ -29,7 +29,7 @@ public interface ClienteAPI {
 	List<ClienteListResponse> getTodosClientes();
 	
 	@GetMapping (value = "/{idCliente}")
-	@ResponseStatus (code = HttpStatus.CREATED)
+	@ResponseStatus (code = HttpStatus.OK)
 	ClienteDetalhadoResponse getClienteAtravesId(@PathVariable UUID idCliente);
 
 

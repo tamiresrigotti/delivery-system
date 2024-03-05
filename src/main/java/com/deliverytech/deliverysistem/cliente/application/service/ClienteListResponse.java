@@ -24,5 +24,4 @@ public class ClienteListResponse {
 	public static List<ClienteListResponse> converte(List<Cliente> clientes) {
 		return clientes.stream().map(ClienteListResponse::new).collect(Collectors.toList());
 	}
-
 }

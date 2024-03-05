@@ -7,12 +7,9 @@ import java.util.UUID;
 import com.deliverytech.deliverysistem.cliente.domain.Cliente;
 import com.deliverytech.deliverysistem.endereco.domain.Endereco;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.Value;
 
-@Getter
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@Value
 public class ClienteDetalhadoResponse {
 
 	private UUID idCliente;
@@ -28,6 +25,6 @@ public class ClienteDetalhadoResponse {
 		this.cpf = cliente.getCpf();
 		this.dataDeNascimento = cliente.getDataDeNascimento();
 		this.endereco = cliente.getEndereco();
-		this.dataHoraDoCadastro = cliente.getDataHoradaUltimaAlteracao();
+		this.dataHoraDoCadastro = cliente.getDataHoraDoCadastro();
 	}
 }
