@@ -1,4 +1,4 @@
-package com.deliverytech.deliverysistem.cliente.credencial.infra;
+package com.deliverytech.deliverysistem.handler;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

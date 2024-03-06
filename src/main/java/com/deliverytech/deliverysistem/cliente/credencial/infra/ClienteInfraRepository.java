@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.deliverytech.deliverysistem.cliente.application.repository.ClienteRepository;
 import com.deliverytech.deliverysistem.cliente.domain.Cliente;
+import com.deliverytech.deliverysistem.handler.APIException;
 import com.mongodb.MongoWriteException;
 
 import lombok.RequiredArgsConstructor;
