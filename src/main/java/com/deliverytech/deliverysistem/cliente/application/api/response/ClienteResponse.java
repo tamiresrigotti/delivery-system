@@ -1,4 +1,4 @@
-package com.deliverytech.deliverysistem.cliente.application.api;
+package com.deliverytech.deliverysistem.cliente.application.api.response;
 import java.util.UUID;
 
 import lombok.Builder;

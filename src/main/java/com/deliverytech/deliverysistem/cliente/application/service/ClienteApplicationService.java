@@ -5,10 +5,10 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import com.deliverytech.deliverysistem.cliente.application.api.ClienteDetalhadoResponse;
-import com.deliverytech.deliverysistem.cliente.application.api.ClienteListResponse;
-import com.deliverytech.deliverysistem.cliente.application.api.ClienteRequest;
-import com.deliverytech.deliverysistem.cliente.application.api.ClienteResponse;
+import com.deliverytech.deliverysistem.cliente.application.api.request.ClienteRequest;
+import com.deliverytech.deliverysistem.cliente.application.api.response.ClienteDetalhadoResponse;
+import com.deliverytech.deliverysistem.cliente.application.api.response.ClienteListResponse;
+import com.deliverytech.deliverysistem.cliente.application.api.response.ClienteResponse;
 import com.deliverytech.deliverysistem.cliente.application.repository.ClienteRepository;
 import com.deliverytech.deliverysistem.cliente.domain.Cliente;
 

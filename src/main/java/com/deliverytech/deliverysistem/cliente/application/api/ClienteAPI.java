@@ -14,6 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.deliverytech.deliverysistem.cliente.application.api.request.ClienteRequest;
+import com.deliverytech.deliverysistem.cliente.application.api.response.ClienteDetalhadoResponse;
+import com.deliverytech.deliverysistem.cliente.application.api.response.ClienteListResponse;
+import com.deliverytech.deliverysistem.cliente.application.api.response.ClienteResponse;
+
 @RestController
 @RequestMapping("/v1/cliente")
 

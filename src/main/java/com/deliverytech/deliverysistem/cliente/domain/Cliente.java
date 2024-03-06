@@ -12,7 +12,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.deliverytech.deliverysistem.cliente.application.api.ClienteRequest;
+import com.deliverytech.deliverysistem.cliente.application.api.request.ClienteRequest;
 
 import lombok.AccessLevel;
 import lombok.Getter;

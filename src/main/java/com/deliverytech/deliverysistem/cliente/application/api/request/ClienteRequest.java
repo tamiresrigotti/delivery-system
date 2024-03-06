@@ -1,4 +1,4 @@
-package com.deliverytech.deliverysistem.cliente.application.api;
+package com.deliverytech.deliverysistem.cliente.application.api.request;
 
 import java.time.LocalDate;
 

@@ -5,6 +5,10 @@ import java.util.UUID;
 
 import org.springframework.web.bind.annotation.RestController;
 
+import com.deliverytech.deliverysistem.cliente.application.api.request.ClienteRequest;
+import com.deliverytech.deliverysistem.cliente.application.api.response.ClienteDetalhadoResponse;
+import com.deliverytech.deliverysistem.cliente.application.api.response.ClienteListResponse;
+import com.deliverytech.deliverysistem.cliente.application.api.response.ClienteResponse;
 import com.deliverytech.deliverysistem.cliente.application.service.ClienteService;
 
 import lombok.RequiredArgsConstructor;
