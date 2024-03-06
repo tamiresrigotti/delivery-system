@@ -1,4 +1,4 @@
-package com.deliverytech.deliverysistem.cliente.credencial.infra;
+package com.deliverytech.deliverysistem.cliente.infra;
 
 import java.util.List;
 import java.util.UUID;
