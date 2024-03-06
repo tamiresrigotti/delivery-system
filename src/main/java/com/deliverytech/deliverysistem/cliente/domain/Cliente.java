@@ -4,16 +4,15 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.br.CPF;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.deliverytech.deliverysistem.cliente.application.api.ClienteRequest;
-import com.deliverytech.deliverysistem.endereco.domain.Endereco;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -33,7 +32,7 @@ public class Cliente {
 	private String cpf;
 	@NotNull
 	private LocalDate dataDeNascimento;
-	@NotNull
+
 	private Endereco endereco;
 
 	private LocalDateTime dataHoraDoCadastro;

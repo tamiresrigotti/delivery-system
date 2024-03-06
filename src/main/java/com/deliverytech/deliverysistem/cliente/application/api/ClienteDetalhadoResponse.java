@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 import com.deliverytech.deliverysistem.cliente.domain.Cliente;
-import com.deliverytech.deliverysistem.endereco.domain.Endereco;
+import com.deliverytech.deliverysistem.cliente.domain.Endereco;
 
 import lombok.AccessLevel;
 import lombok.Getter;
