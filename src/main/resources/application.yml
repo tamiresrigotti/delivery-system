@@ -1,10 +1,17 @@
 server:
- servelet:
-  context-path: /delivery/api
-  
+ servlet:
+   context-path: /delivery/api
+
 spring:
  data:
   mongodb:
    authentication-database: admin
    uri: ${MONGO_DB_URI:mongodb+srv://tammyrigoti:aqs33jk5q1Il1WCa@cluster0.bacfzeo.mongodb.net/Delivery?retryWrites=true&w=majority&appName=Cluster0}
    auto-index-creation: true
+   
+springdoc:
+  api-docs:
+    path: /api-docs
+
+  swagger-ui:
+    path: /public/swagger
