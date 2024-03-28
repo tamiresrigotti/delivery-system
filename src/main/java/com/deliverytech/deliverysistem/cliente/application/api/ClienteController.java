@@ -24,7 +24,7 @@ public class ClienteController implements ClienteAPI {
 		log.info("[finaliza] ClienteController - postCliente");
 		return clienteCriado;
 	}
-	
+
 	@Override
 	public List<ClienteListResponse> getTodosClientes() {
 		log.info("[inicia] ClienteController - getTodosClientes");
@@ -40,6 +40,13 @@ public class ClienteController implements ClienteAPI {
 		ClienteDetalhadoResponse cliente = clienteService.buscaClienteAtravesId(idCliente);
 		log.info("[finaliza] ClienteController - getClienteAtravesId");
 		return cliente;
+	}
+
+	@Override
+	public void deletaClienteAtravesId(UUID idCliente) {
+		log.info("[inicia] ClienteController - deletaClienteAtravesId");
+		log.info("[idCliente] {}", idCliente);
+		log.info("[finaliza] PessoaController - deletaClienteAtravesId");
 	}
 
 }

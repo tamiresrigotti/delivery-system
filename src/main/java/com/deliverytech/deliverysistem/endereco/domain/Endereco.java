@@ -2,6 +2,15 @@ package com.deliverytech.deliverysistem.endereco.domain;
 
 import javax.validation.constraints.NotBlank;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+@Getter
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@Document(collection = "enderecos")
+
 public class Endereco {
 	@NotBlank
 	private String rua;
