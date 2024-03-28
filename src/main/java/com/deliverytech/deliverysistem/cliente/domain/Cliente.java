@@ -12,6 +12,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.deliverytech.deliverysistem.cliente.application.api.ClienteAlteracaoRequest;
 import com.deliverytech.deliverysistem.cliente.application.api.ClienteRequest;
 import com.deliverytech.deliverysistem.endereco.domain.Endereco;
 
@@ -46,6 +47,14 @@ public class Cliente {
 		this.dataDeNascimento = clienteRequest.getDataDeNascimento();
 		this.endereco = clienteRequest.getEndereco();
 		this.dataHoraDoCadastro = LocalDateTime.now();
+	}
+
+	public void altera(ClienteAlteracaoRequest clienteAlteracaoRequest) {
+		this.idCliente = UUID.randomUUID();
+		this.nomeCompleto = clienteAlteracaoRequest.getNomeCompleto();
+		this.dataDeNascimento = clienteAlteracaoRequest.getDataDeNascimento();
+		this.endereco = clienteAlteracaoRequest.getEndereco();
+		this.dataHoradaUltimaAlteracao = LocalDateTime.now();
 	}
 
 }
