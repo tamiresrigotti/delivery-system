@@ -3,6 +3,8 @@ package com.deliverytech.deliverysistem.cliente.application.api;
 import java.util.List;
 import java.util.UUID;
 
+import javax.validation.Valid;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import com.deliverytech.deliverysistem.cliente.application.service.ClienteListResponse;
@@ -48,6 +50,15 @@ public class ClienteController implements ClienteAPI {
 		log.info("[idCliente] {}", idCliente);
 		clienteService.deletaClienteAtravesId (idCliente);
 		log.info("[finaliza] PessoaController - deletaClienteAtravesId");
+	}
+
+	@Override
+	public void patchAlteraCliente(UUID idCliente, ClienteAlteracaoRequest clienteAlteracaoRequest) {
+		log.info("[inicia] ClienteController - patchAlteraCliente");
+		log.info("[idCliente] {}", idCliente);
+		//clienteService.patchAlteraClienteAtravesId (idCliente, clienteAltercaoRequest);
+		log.info("[finaliza] PessoaController - patchAlteraCliente");
+		
 	}
 
 }
